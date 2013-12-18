@@ -20,7 +20,8 @@ end
 
 def titleize(str)
 	parts = []
-	little_words = ['at', 'over', 'and']
+	little_words = ['at', 'over', 'and', 'the']
 	str.split.each { |v| parts << (little_words.include?(v) ? v : v.capitalize) }
+	parts.first.capitalize!
 	parts.join(' ')
 end
