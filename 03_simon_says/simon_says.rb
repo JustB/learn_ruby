@@ -17,3 +17,10 @@ end
 def first_word(str)
 	str.split[0]
 end
+
+def titleize(str)
+	parts = []
+	little_words = ['at', 'over', 'and']
+	str.split.each { |v| parts << (little_words.include?(v) ? v : v.capitalize) }
+	parts.join(' ')
+end
