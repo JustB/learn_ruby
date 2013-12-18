@@ -21,3 +21,9 @@ end
 def power(a, exp)
 	a ** exp
 end
+
+def factorial(num)
+	return 1 if num == 0 or num == 1
+	return num * factorial(num-1)
+
+end
