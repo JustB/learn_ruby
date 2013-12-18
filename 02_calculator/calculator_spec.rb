@@ -90,7 +90,9 @@ describe "#multiply" do
 end
 
 describe "#power" do
-  it "raises one number to the power of another number"
+  it "raises one number to the power of another number" do
+    power(3,2).should == 9
+  end
 end
 
 # http://en.wikipedia.org/wiki/Factorial

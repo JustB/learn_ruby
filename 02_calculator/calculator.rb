@@ -17,3 +17,7 @@ def multiply(*numbers)
 	numbers.each { |v| prod *= v}
 	prod
 end
+
+def power(a, exp)
+	a ** exp
+end
