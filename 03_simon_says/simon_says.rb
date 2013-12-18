@@ -13,3 +13,7 @@ end
 def start_of_word(str, letters)
 	str.slice(0, letters)
 end
+
+def first_word(str)
+	str.split[0]
+end
