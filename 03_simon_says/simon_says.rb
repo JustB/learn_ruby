@@ -11,5 +11,5 @@ def repeat(what, times=2)
 end
 
 def start_of_word(str, letters)
-	str[letters-1]
+	str.slice(0, letters)
 end
