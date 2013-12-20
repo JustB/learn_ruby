@@ -3,6 +3,10 @@ def translate(s)
 	if vowels.include? s[0]
 		s + 'ay'
 	else
-		s[1..-1] + s[0] + 'ay'
+		if vowels.include? s[1]
+			s[1..-1] + s[0] + 'ay'
+		else
+			s[2..-1] + s[0..1] + 'ay'
+		end
 	end
 end
